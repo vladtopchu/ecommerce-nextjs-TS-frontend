@@ -1,5 +1,15 @@
+import { Header } from '../components/header'
+import { Footer } from '../components/footer'
+import { Slider } from '../components/slider'
+
 const HomePage = () => {
-	return <div>Welcome to Next.js!</div>
+	return (
+		<>
+			<Header />
+			<Slider />
+			<Footer />
+		</>
+	)
 }
 
 export default HomePage

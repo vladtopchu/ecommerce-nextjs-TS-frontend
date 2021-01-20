@@ -1,0 +1,90 @@
+@use 'colors';
+@import "swiper/swiper.scss";
+@import "swiper/components/navigation/navigation.scss";
+@import "swiper/components/pagination/pagination.scss";
+@import "swiper/components/scrollbar/scrollbar.scss";
+
+.swiper-container {
+	margin-top: 20px;
+	position: relative;
+	background-color: #f8f8f8;
+	.swiper-slide {
+		height: 426px;
+		@media (max-width: 1320px) {
+			height: 350px;
+		}
+		@media (max-width: 992px) {
+			height: 300px;
+		}
+		@media (max-width: 768px) {
+			height: 200px;
+		}
+	}
+	@media (max-width: 768px) {
+		margin-top: 0px;
+	}
+}
+
+.swiper-button-prev {
+	left: 10%;
+	background-color: colors.$subcolor;
+	width: 54px !important;
+	height: 54px !important;
+	border-radius: 50%;
+	transform: rotate(180deg);
+	background-image: url("../public/smallArrow.svg");
+	background-size: 12px;
+	background-repeat: no-repeat;
+	background-position: center;
+	@media (max-width: 1320px) {
+		left: 20px;
+	}
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+.swiper-button-next {
+	right: 10%;
+	background-color: colors.$subcolor;
+	width: 54px !important;
+	height: 54px !important;
+	border-radius: 50%;
+	background-image: url("../public/smallArrow.svg");
+	background-size: 12px;
+	background-repeat: no-repeat;
+	background-position: center;
+	@media (max-width: 1320px) {
+		right: 20px;
+	}
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
+
+.swiper-pagination {
+	max-width: 1450px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 10%;
+	left: 50% !important;
+	transform: translateX(-50%);
+	.swiper-pagination-bullet {
+		background-color: black !important;
+		height: 4px !important;
+		border-radius: 5px !important;
+		flex: 1 1 33.333%;
+	}
+	.swiper-pagination-bullet-active {
+		background-color: colors.$subcolor !important;
+	}
+	@media (max-width: 1320px) {
+		max-width: 1140px;
+	}
+	@media (max-width: 992px) {
+		max-width: 950px;
+	}
+	@media (max-width: 768px) {
+		max-width: 510px;
+	}
+}

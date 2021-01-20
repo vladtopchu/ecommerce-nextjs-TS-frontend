@@ -1,0 +1,174 @@
+//popUpCatalog animation
+
+.popUpCatalog-enter {
+	opacity: 0;
+}
+
+.popUpCatalog-enter-active {
+	transition: opacity 300ms linear;
+	opacity: 1;
+}
+
+.popUpCatalog-exit-active {
+	transition: opacity 200ms linear;
+	opacity: 0;
+}
+
+//popUpCatalogBg animation
+
+.popUpCatalogBg-enter {
+	opacity: 0;
+}
+
+.popUpCatalogBg-enter-active {
+	transition: opacity 500ms linear;
+	transition-delay: 200ms;
+	opacity: 1;
+}
+
+.popUpCatalogBg-exit-active {
+	transition: opacity 100ms linear;
+	opacity: 0;
+}
+
+//mobile menu animation
+
+.mobileMenu-enter-active {
+	animation: mobileMenu 0.3s linear;
+}
+
+.mobileMenu-exit-active {
+	animation: mobileMenu 0.2s linear alternate-reverse;
+}
+
+@keyframes mobileMenu {
+	0% {
+		left: -100%;
+		opacity: 0.1;
+	}
+	30% {
+		left: -70%;
+		opacity: 0.4;
+	}
+	60% {
+		left: -40%;
+		opacity: 0.7;
+	}
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+//mobile search animation
+
+.mobileSearch-enter-active {
+	animation: mobileSearch 0.3s linear;
+}
+
+.mobileSearch-exit-active {
+	animation: mobileSearch 0.3s linear alternate-reverse;
+}
+
+@keyframes mobileSearch {
+	0% {
+		top: -100%;
+		opacity: 0;
+	}
+	50% {
+		top: -50%;
+		opacity: 0.5;
+	}
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+//mobileSearchBg
+
+.mobileSearchBg-enter {
+	opacity: 0;
+}
+
+.mobileSearchBg-enter-active {
+	transition: opacity 300ms linear;
+	transition-delay: 250ms;
+	opacity: 1;
+}
+
+.mobileSearchBg-exit-active {
+	transition: opacity 200ms linear;
+	opacity: 0;
+}
+
+//callMe bg
+
+.callMeBg-enter {
+	opacity: 0;
+}
+
+.callMeBg-enter-active {
+	transition: opacity 300ms linear;
+	transition-delay: 200ms;
+	opacity: 1;
+}
+
+.callMeBg-exit-active {
+	transition: opacity 100ms linear;
+	opacity: 0;
+}
+
+//callMe animation
+
+.callMe-enter {
+	opacity: 0;
+}
+
+.callMe-enter-active {
+	transition: opacity 300ms linear;
+	opacity: 1;
+}
+
+.callMe-exit-active {
+	transition: opacity 300ms linear;
+	opacity: 0;
+}
+
+//imgPopUp animation
+
+.imgPopUp-enter {
+	opacity: 0;
+	transform: scale(0.7);
+}
+
+.imgPopUp-enter-active {
+	opacity: 1;
+	transform: translateX(0);
+	transition: opacity 200ms, transform 200ms;
+}
+
+.imgPopUp-exit {
+	opacity: 1;
+}
+.imgPopUp-exit-active {
+	opacity: 0;
+	transform: scale(0.7);
+	transition: opacity 200ms, transform 200ms;
+}
+
+//imgPopUpBg animation
+
+.imgPopUpBg-enter {
+	opacity: 0;
+}
+
+.imgPopUpBg-enter-active {
+	transition: opacity 200ms linear;
+	opacity: 1;
+}
+
+.imgPopUpBg-exit-active {
+	transition: opacity 200ms linear;
+	opacity: 0;
+}

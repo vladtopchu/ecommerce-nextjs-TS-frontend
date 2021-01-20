@@ -1,0 +1,175 @@
+@use 'colors';
+
+.delAndPey {
+	width: 100%;
+	padding: 50px 0;
+	@media (max-width: 768px) {
+		padding: 20px 0 35px;
+	}
+	@media (max-width: 481px) {
+		padding-top: 10px;
+	}
+	.delAndPeyInner {
+		max-width: 1250px;
+		margin: 0 auto;
+		.pageTitle {
+			font-size: 36px;
+			font-weight: 600;
+			line-height: 48px;
+			margin-bottom: 36px;
+			@media (max-width: 768px) {
+				font-size: 21px;
+				margin-bottom: 25px;
+			}
+		}
+		.deliveryContent {
+			.deliveryTable {
+				display: flex;
+				align-items: flex-start;
+				padding-bottom: 100px;
+				@media (max-width: 768px) {
+					flex-direction: column;
+					padding-bottom: 35px;
+				}
+				.delivery {
+					flex-grow: 1;
+					margin-right: 150px;
+					@media (max-width: 992px) {
+						margin-right: 75px;
+					}
+					@media (max-width: 768px) {
+						width: 100%;
+						margin-right: 0;
+						margin-bottom: 36px;
+					}
+					.deliveryTitle {
+						font-weight: 600;
+						font-size: 24px;
+						margin-bottom: 41px;
+						@media (max-width: 768px) {
+							font-size: 16px;
+							margin-bottom: 16px;
+						}
+					}
+					.deliveryList {
+						.deliveryItem {
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							margin-bottom: 36px;
+							@media (max-width: 768px) {
+								margin-bottom: 25px;
+							}
+							&:last-child {
+								margin-bottom: 0;
+							}
+							.deliveryGeo {
+								font-size: 14px;
+								font-weight: 700;
+								position: relative;
+								@media (max-width: 768px) {
+									font-size: 12px;
+									font-weight: 600;
+								}
+							}
+							.border {
+								flex-grow: 1;
+								border-bottom: 1px dotted #e5e5e5;
+								position: relative;
+								margin: 0 7px;
+								top: 4px;
+							}
+							.deliveryPrice {
+								font-size: 16px;
+								font-weight: 300;
+								@media (max-width: 768px) {
+									font-size: 11px;
+								}
+							}
+						}
+					}
+				}
+				.payment {
+					flex-grow: 1;
+					@media (max-width: 768px) {
+						width: 100%;
+					}
+					.paymentTitle {
+						font-weight: 600;
+						font-size: 24px;
+						margin-bottom: 41px;
+						@media (max-width: 768px) {
+							font-size: 16px;
+							margin-bottom: 16px;
+						}
+					}
+					.paymentList {
+						.paymentItem {
+							margin-bottom: 39px;
+							@media (max-width: 768px) {
+								font-size: 12px;
+								margin-bottom: 25px;
+							}
+							&:last-child {
+								margin-bottom: 0;
+							}
+							span {
+								padding-left: 21px;
+								font-size: 14px;
+								font-weight: 700;
+								position: relative;
+								&::before {
+									content: "";
+									width: 6px;
+									height: 6px;
+									border-radius: 50%;
+									background-color: colors.$subcolor;
+									position: absolute;
+									left: 0;
+									top: 50%;
+									transform: translateY(-50%);
+								}
+								img {
+									position: absolute;
+									height: 30px;
+									right: -40px;
+									top: 50%;
+									transform: translateY(-50%);
+									@media (max-width: 768px) {
+										height: 25px;
+										right: -35px;
+									}
+								}
+								@media (max-width: 768px) {
+									font-size: 12px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.deliveryText {
+			width: 70%;
+			font-size: 14px;
+			line-height: 24px;
+			@media (max-width: 1320px) {
+				width: 100%;
+			}
+			@media (max-width: 768px) {
+				font-size: 12px;
+				line-height: 20px;
+			}
+		}
+		@media (max-width: 1320px) {
+			max-width: 940px;
+		}
+		@media (max-width: 992px) {
+			max-width: 750px;
+		}
+		@media (max-width: 768px) {
+			max-width: 510px;
+			padding: 0 16px;
+		}
+	}
+}

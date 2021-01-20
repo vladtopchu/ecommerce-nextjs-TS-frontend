@@ -1,0 +1,97 @@
+@use 'colors';
+.aboutUs {
+	width: 100%;
+	padding: 50px 0;
+	.aboutUsInner {
+		max-width: 1250px;
+		margin: 0 auto;
+		.aboutUsTitle {
+			font-size: 36px;
+			line-height: 48px;
+			margin-bottom: 20px;
+			font-weight: 600;
+			span {
+				color: colors.$subcolor;
+			}
+			@media (max-width: 768px) {
+				font-size: 25px;
+				line-height: 30px;
+			}
+			@media (max-width: 481px) {
+				font-size: 20px;
+				line-height: 25px;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+		}
+		.aboutUsDescription {
+			font-size: 25px;
+			margin-bottom: 30px;
+			span {
+				color: colors.$subcolor;
+			}
+			@media (max-width: 768px) {
+				font-size: 15px;
+			}
+			@media (max-width: 481px) {
+				font-size: 12px;
+				margin-bottom: 15px;
+			}
+		}
+		.aboutUsInfo {
+			display: flex;
+			@media (max-width: 768px) {
+				flex-direction: column;
+			}
+			.aboutUsLogo {
+				padding: 90px 52px;
+				width: 40%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 50px;
+				border: 1px solid #f2f2f2;
+				margin-right: 50px;
+				span {
+					color: colors.$subcolor;
+				}
+				@media (max-width: 768px) {
+					width: 100%;
+					margin-right: 0px;
+					margin-bottom: 30px;
+				}
+				@media (max-width: 481px) {
+					font-size: 30px;
+					padding: 50px;
+					margin-bottom: 15px;
+				}
+			}
+			.aboutUsText {
+				font-size: 15px;
+				font-weight: 300;
+				p {
+					margin-top: 15px;
+					&:first-child {
+						margin-top: 0;
+					}
+				}
+				@media (max-width: 481px) {
+					font-size: 12px;
+				}
+			}
+		}
+		@media (max-width: 1320px) {
+			max-width: 940px;
+		}
+		@media (max-width: 992px) {
+			max-width: 750px;
+		}
+		@media (max-width: 768px) {
+			max-width: 510px;
+			padding: 0 16px;
+		}
+	}
+	@media (max-width: 768px) {
+		padding: 20px 0;
+	}
+}

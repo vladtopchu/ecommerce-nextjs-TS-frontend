@@ -1,0 +1,167 @@
+@use 'colors';
+
+.mobileMenu {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: #fff;
+	z-index: 201;
+	.closeIcon {
+		position: absolute;
+		top: 25px;
+		left: 20px;
+		height: 17px;
+	}
+	.mobileMenuInner {
+		padding: 88px 0 28px;
+		.mobileSearchForm {
+			display: flex;
+			align-items: center;
+			position: relative;
+			margin: 0 16px 16px;
+			.searchInput {
+				height: 50px;
+				flex-grow: 1;
+				border: none;
+				background-color: colors.$grey;
+				border-radius: 5px;
+				padding-left: 52px;
+				font-weight: 300;
+			}
+			.searchIcon {
+				position: absolute;
+				height: 17px;
+				opacity: 0.1;
+				left: 20px;
+			}
+			.searchBtn {
+				position: absolute;
+				right: 0;
+				background-color: colors.$subcolor;
+				height: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 64px;
+				border-radius: 5px;
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 11px;
+				transition: all 0.1s linear;
+				letter-spacing: 1px;
+				cursor: pointer;
+				span {
+					@media (max-width: 768px) {
+						display: none;
+					}
+				}
+				@media (max-width: 768px) {
+					width: 48px;
+				}
+				.loupeIcon {
+					height: 20px;
+					display: none;
+					@media (max-width: 768px) {
+						display: block;
+					}
+				}
+			}
+		}
+		.catalogLink {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 12px 16px;
+			font-size: 15px;
+			font-weight: 600;
+			border: 4px solid #f8f8f8;
+			border-right: none;
+			border-left: none;
+			line-height: 24px;
+		}
+		.mobileList {
+			list-style: none;
+			font-size: 15px;
+			font-weight: 600;
+			.mobileListItem {
+				padding: 12px 16px;
+			}
+		}
+		.cartLink {
+			display: flex;
+			position: relative;
+			align-items: center;
+			justify-content: space-between;
+			padding: 12px 16px;
+			font-size: 15px;
+			font-weight: 600;
+			border: 4px solid #f8f8f8;
+			border-right: none;
+			border-left: none;
+			line-height: 24px;
+			.cartIcon {
+				height: 25px;
+			}
+			.bubble {
+				border: 1px solid black;
+				background-color: white;
+				min-height: 16px;
+				min-width: 16px;
+				right: 10px;
+				padding: 0 4px;
+				border-radius: 10px;
+				font-weight: 700;
+				font-size: 11px;
+				line-height: 13px;
+				color: black;
+				position: absolute;
+				top: 22px;
+			}
+		}
+		.mailLink {
+			display: flex;
+			align-items: center;
+			padding: 16px;
+			font-weight: 600;
+			.mailIcon {
+				height: 20px;
+				margin-right: 10px;
+			}
+		}
+		.callLink {
+			display: flex;
+			align-items: center;
+			padding: 0 16px 16px;
+			font-weight: 700;
+			font-size: 16px;
+			.callIcon {
+				margin-right: 10px;
+				height: 20px;
+			}
+		}
+		.callMe {
+			padding: 0 20px;
+			.callMeBtn {
+				font-style: normal;
+				font-weight: 600;
+				font-size: 13px;
+				line-height: 24px;
+				color: #333;
+				padding: 12px;
+				width: 100%;
+				margin: 0 auto;
+				border-radius: 5px;
+				border: none;
+				background-color: colors.$subcolor;
+			}
+		}
+	}
+}
+
+.activeCatalog {
+	left: 0;
+}
