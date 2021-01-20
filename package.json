@@ -12,9 +12,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "moment": "^2.29.1",
     "next": "^10.0.5",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-hamburger-menu": "^1.2.1",
+    "react-multiple-select-dropdown-lite": "^2.0.4",
+    "react-scroll": "^1.8.1",
+    "react-toastify": "^6.2.0",
+    "react-transition-group": "^4.4.1",
+    "react-zoom-pan-pinch": "^1.6.1",
+    "sass": "^1.32.5",
+    "swiper": "^6.4.5",
+    "transliteration": "^2.2.0"
   },
   "devDependencies": {
     "@types/node": "^14.14.21",
